@@ -43,7 +43,7 @@ function MoviePlayback() {
     .get(`${config.BASE_URL}/movies/id/${movie_id}`)
     .then((res) => {
       setData(res.data);
-      console.log(data);
+      // console.log(res.data);
       // console.log(userDetails.favorites)
     })
     .catch((err) => {
@@ -195,12 +195,29 @@ function MoviePlayback() {
           )}
           {data ? (
             <div className="mt-8 items-center  flex gap-6">
+              {
+                (user.hasOwnProperty("subscription") && user.subscription!="") ?
+                <Link to="/video">
+                {" "}
+                <button className="py-5 px-32 bg-[#f8f8f8] inline-block hover:scale-[1.07] smt rounded text-black font-bold" onClick={addToWatchHistory}>
+                  PLAY
+                </button>
+              </Link>
+              :
+              data.premium ?
+              <button disabled className=" py-5 px-32 bg-[#f8f8f8] inline-block  smt rounded text-black font-bold" >
+                  PLAY
+              </button>:
+
               <Link to="/video">
                 {" "}
                 <button className="py-5 px-32 bg-[#f8f8f8] inline-block hover:scale-[1.07] smt rounded text-black font-bold" onClick={addToWatchHistory}>
                   PLAY
                 </button>
               </Link>
+
+
+}
               <button className="text-white py-4 px-7 rounded inline-block hover:scale-[1.06] smt bg-[#9491913d] text-3xl" onClick={addToWatchlist}>
                 {addedToWatchList ? <DoneOutlineIcon/> : <PlaylistAddIcon/>}
               </button>
