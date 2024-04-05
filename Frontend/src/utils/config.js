@@ -3,7 +3,7 @@ const dev = {
 };
 
 const prod = {
-  BASE_URL: "https://mflix-backend.herokuapp.com/api",
+  BASE_URL: "https://backend-1gia.onrender.com",
     // BASE_URL: "https://mflix-server.azurewebsites.net/api",
     
 };
