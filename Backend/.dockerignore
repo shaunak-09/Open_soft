@@ -1,0 +1,11 @@
+# Common
+README.md
+Dockerfile
+docker-compose.yml
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/

@@ -1,0 +1,11 @@
+services:
+  mflix_backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: mflix_backend
+    ports:
+      - 8080:8080
+    env_file:
+      - .env
+    network_mode: host

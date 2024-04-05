@@ -1,0 +1,48 @@
+.media-player {
+    --media-font-family: sans-serif;
+     --media-controls-color: #f5f5f5;
+     --media-focus-ring: 0 0 0 3px rgb(78 156 246);
+   }
+ 
+   
+   .vds-button {
+         --media-button-color: whitesmoke;
+       --media-button-size: 2rem;
+       --media-button-icon-size: 100%;
+       --media-button-padding: 0px;
+       --media-button-border-radius: 8px;
+       --media-button-hover-bg: rgb(255 255 255 / 0.3);
+       --media-button-hover-transform: scale(1);
+       --media-button-hover-transition: transform 0.2s ease-in;
+       --media-button-touch-hover-border-radius: 100%;
+       --media-button-touch-hover-bg: rgb(255 255 255 / 0.2);
+       background-color: transparent;
+       padding: 0px;
+       margin-right: 1rem;
+     }
+   
+ 
+   #root {
+     max-width: 100%;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+    }
+ .shadow{
+   background: black;
+     box-shadow: 0 2px 15px -7px whitesmoke, 0 8px 10px -6px #000;
+     border: 6px;
+ }
+    
+     .title-video-container {
+       position: absolute;
+       top: 5%; 
+       left: 2%; 
+       font-size: 3vw; 
+       color: #ffffff; 
+       z-index: 999; 
+       font-weight: 300;
+     }
+     
+
+ 

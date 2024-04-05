@@ -1,0 +1,57 @@
+@media (0px<width<=900px) {
+    .overlay-01{
+        top:28%;
+    }
+    .overlay-02{
+        height:55%;
+        background-image: linear-gradient(to left,rgba(0, 0, 0, 0.716) 80%,transparent);
+    }
+    .overlay-1{
+        display:none
+    }
+    .description{
+        top:0;
+        width:60%;
+        
+    }
+   .mc1{
+      position: absolute;
+      top:42%;
+      
+   }
+   .mc2{
+    margin-top: 20%;
+   }
+   
+}
+
+.detailimg{
+     width:36rem;
+    scale:0.7;
+    /* margin-bottom: 10%; */
+     /* height:28rem;  */
+     top:-3%;
+     left:6%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background-color: rgba(157, 156, 156, 0.142);
+    border:solid 1px rgba(175, 175, 175, 0.834);
+}
+.detailimg img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  object-fit:contain;
+}
+
+.detload{
+    width:36rem;
+    scale:0.7;
+    /* margin-bottom: 10%; */
+     /* height:28rem;  */
+     top:-3%;
+     left:6%;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+}
+

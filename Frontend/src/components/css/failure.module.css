@@ -1,0 +1,30 @@
+.App{
+    color: white;
+    background-color: rgb(32,32,32);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .full{
+    width: 27rem;
+    height: 17rem;
+    padding: 25px;
+    background-color: rgb(46,46,46);
+    border: 0.1px solid rgb(95, 94, 94);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  
+  }
+  .tick{
+    height: 65%;
+  }
+  
+  .payment_heading{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
